@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="/css/base/_typography.css">
     <link rel="stylesheet" href="/css/layout/stats.css">
     <link rel="stylesheet" href="/css/layout/participating-schools.css">
-
+    <link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
     <!-- HEADER SECTION -->
@@ -110,13 +111,13 @@
   <div class="school-container">
     <h2>Choose the School That Fits You Best</h2>
 
-    <div class="school-swiper swiper schoolSwiper"> 
+    <div class="school-swiper schoolSwiper"> 
      
-        <img src="/assets/icons/left_arow.png" class="arrow-action icon-prev"/>
+        <img src="/assets/icons/left_arow.png" class="arrow-action icon-prev" alt="Previous">
 
-        <div class="swiper-card">
+        <div class="swiper-wrapper">
 
-          <div class="slider-slide"> 
+          <div class="swiper-slide"> 
              <div class="school-card">
               <img src="/assets/students/student1.png" id="slide" alt="student-image"/>
               <div class="school-info">
@@ -126,7 +127,7 @@
              </div>
           </div>
 
-          <div class="slider-slide"> 
+          <div class="swiper-slide"> 
              <div class="school-card">
               <img src="/assets/students/student2.png"alt="student-image"/>
               <div class="school-info">
@@ -136,7 +137,7 @@
              </div>
           </div>
 
-           <div class="slider-slide"> 
+           <div class="swiper-slide"> 
              <div class="school-card">
               <img src="/assets/students/student3.png"alt="student-image"/>
               <div class="school-info">
@@ -146,7 +147,7 @@
              </div>
           </div>
 
-           <div class="slider-slide"> 
+           <div class="swiper-slide"> 
              <div class="school-card">
               <img src="/assets/students/student4.png"alt="student-image"/>
               <div class="school-info">
@@ -159,9 +160,9 @@
         </div>
 
           <img src="/assets/icons/right_arrow.png" class="arrow-action icon-next"/>
+    <div class="swiper-pagination"></div>
 
     </div>
-    <div class="swiper-pagination"></div>
   </div>
 </section>
 
@@ -271,7 +272,8 @@
             <p>Copyright © 2025 | All rights reserved.  Premier Schools Exhibition</p>
       </div>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 <script src="./script/heroSlider.js"></script>
 
 </body>

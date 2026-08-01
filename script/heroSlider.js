@@ -19,21 +19,30 @@
 let schoolSwiper;
 
 function initSwiper() {
-    if ( window.innerWidth < 992 && !schoolSwiper){
 
-        schoolSwiper = new Swiper ( ".schoolSwiper", {
-            sliderPerView: 1,
+    if ( window.innerWidth < 992) {
 
+        if (!schoolSwiper) {
+
+        schoolSwiper = new Swiper(".schoolSwiper", {
+
+            slidesPerView: 1,
             spaceBetween: 20,
 
             pagination: {
                 el: ".swiper-pagination",
-                clicable: true,
+                clickable: true,
             },
+
             keyboard: {
                 enabled: true,
             },
-            ally: {
+
+            navigation:{
+                nextE1:".icon-next",
+                prevE1:".icon-prev",
+            },
+            a11y: {
                 enabled:true,
             },
 
@@ -42,18 +51,21 @@ function initSwiper() {
                     slidesPerView:2,
                     spaceBetween: 20,
                 }
-             }
+             },
         });
     }
 
-    else if (window.innerWidth >= 992 && schoolSwiper) {
-        schoolSwiper.destroy (true, true);
+  }  else  { 
 
-        schoolSwiper = undefined;
+        if ( schoolSwiper) {
+            schoolSwiper.destroy(true, true);
+            schoolSwiper = null;
+        }
+        
     }
      
 }
 
-initSwiper();
 
+window.addEventListener("load", initSwiper);
 window.addEventListener("resize", initSwiper);
