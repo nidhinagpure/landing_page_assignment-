@@ -1,9 +1,10 @@
 
+/* School Logo */
+
 .schools{
-    padding: 60px 0;
+    padding: 60px 0 0px 0;
     overflow: hidden;
 }
-
 .schools h2{
     text-align: center;
     margin-bottom: 50px;
@@ -16,23 +17,19 @@
     margin: 0;
     font-weight: 600;
 }
-
 .logo-slider{
     overflow: hidden;
     margin: 40px 0;
 }
-
 .logo-track{
     display: flex;
     width: max-content;
     gap:20px;
     animation: scrollLeft 35s linear infinite;
 }
-
 .reverse .logo-track{
     animation: scrollRight 35s linear infinite;
 }
-
 .logo-card{
     width: 220px;
     height: 100px;
@@ -40,21 +37,17 @@
     background: #fff;
     display: flex;
     justify-content: center;
-    align-items: center;  
-     
+    align-items: center;   
 }
-
 .logo-card img{
     max-width: 160px;
     max-height: 90px;
     padding: 0px 10px 0px 10px;
 }
-
 .logo-slider:hover .logo-track,
 .logo-slider:focus-within .logo-track{
     animation-play-state: paused;
 }
-
 @keyframes scrollLeft{
     from{
         transform: translateX(0);
@@ -63,12 +56,155 @@
         transform: translateX(-50%);
     }
 }
-
 @keyframes scrollRight{
     from{
         transform: translateX(-50%);
     }
     to{
         transform: translateX(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Choose School Card  */
+
+.school-section{
+    padding: 80px 0;
+}
+
+.swiper-card{
+   display: flex;
+   justify-content: center;
+   gap: 14px;
+   margin: 30px 52px 30px 52px;
+}
+.school-section h2{
+    text-align: center;
+    font-size: 38px;
+    background: linear-gradient( to right, #0344A2, #010E39);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-weight: 600;
+}
+
+.school-card{
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    height: 330px;
+}
+.school-card img{
+    width:100%;
+    height: 100%;
+    object-fit:contain;
+    display: block;
+    filter: brightness(80%); 
+}
+
+.school-info{
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    padding: 20px;
+    color: #fff;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+}
+.school-info h3{
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.school-info p{
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.swiper-slide{
+    height: auto;
+}
+
+.school-swiper{
+    position: relative;
+}
+.arrow-action{
+    position: absolute;
+    background: linear-gradient( to right, #0344A2, #010E39);
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 6px;
+    top:40%;
+}
+
+.icon-prev{
+   left: 25px;
+   
+}
+.icon-next{
+  right:25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsivness slider */
+
+@media (min-width: 992px) and (max-width: 1400px){
+    .swiper-card{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 10px;
+    }
+    .swiper-card{
+        width: auto !important;
+    }
+}
+@media (min-width: 992px){
+     .arrow-action{
+       display: none;
     }
 }
