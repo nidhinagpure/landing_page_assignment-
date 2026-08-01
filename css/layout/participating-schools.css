@@ -165,7 +165,19 @@
 
 
 
+@media(max-width:767px){
+    .swiper-pagination{
+        margin-top:20px;
+        position: relative;
+    }
+}
 
+@media(max-width:776px) and (max-width:991px){
+    .swiper-pagination{
+        margin-top:20px;
+        position: relative;
+    }
+}
 
 
 
@@ -193,7 +205,7 @@
 
 /* Responsivness slider */
 
-@media (min-width: 992px) and (max-width: 1400px){
+/* @media (min-width: 992px) and (max-width: 1400px){
     .swiper-card{
         display: grid;
         grid-template-columns: repeat(4,1fr);
@@ -207,4 +219,4 @@
      .arrow-action{
        display: none;
     }
-}
+} */
