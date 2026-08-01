@@ -1,0 +1,69 @@
+
+.isolation-box{
+    margin:30px 0;
+    margin-bottom: 30px;
+}
+.isolation-container{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    align-items:center;
+    gap: 2px;
+}
+.isolation-cards{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+.isolation-container img{
+   width: 60px;
+   height: 120px;
+   display: block;
+}
+.isolation-content{
+    margin: 0;
+    text-align: center;
+    line-height: 1.3;
+}
+.isolation-content p{
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 22px;
+    background: linear-gradient( to right, #0344A2, #010E39);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin: 0;
+}
+.isolation-content h3{
+    background: linear-gradient( to right, #0344A2, #010E39);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 22px;
+     margin: 0;
+}
+
+@media (min-width: 320px) and (max-width: 479px){
+   .isolation-container img{
+   width: 40px;
+   height: 80px;
+}
+
+.isolation-content p, .isolation-content h3{
+    font-size: 16px;
+}
+.isolation-cards{
+    gap:30px;
+}
+.isolation-box{
+   margin: 20px 10px 20px 10px;
+}
+}
