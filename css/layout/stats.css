@@ -62,11 +62,44 @@
 }
 .isolation-cards{
     gap:30px;
+    display: grid;
+    grid-template-columns: auto auto;
 }
 .isolation-box{
    margin: 20px 10px 20px 10px;
 }
+
+.isolation-content p{
+    font-size: 12px;
 }
+.isolation-content h3{
+    font-size: 12px;
+}
+
+}
+
+@media (min-width: 790px) and (max-width: 1200px){
+ .isolation-cards{
+    gap:20px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.isolation-box{
+   margin: 20px 30px 20px 30px;
+}
+.isolation-content p{
+    font-size: 14px;
+}
+.isolation-content h3{
+    font-size: 14px;
+}
+.isolation-container img{
+   width: 40px;
+   height: 100px;
+   display: block;
+}
+}
+
 
 
 
@@ -82,7 +115,8 @@ img{
 }
 .appointment-hero{
     overflow: hidden;
-    background: #E8D8FF;
+            background: #E8D8FF;
+
 }
 .appointment-hero_container{
     display: flex;
@@ -96,6 +130,7 @@ img{
     position: relative;
     z-index: 2;
     padding-left: 70px;
+
 }
 
 .appointment-hero_eyebrow{
@@ -154,6 +189,7 @@ img{
 .appointment-hero_image img{
     width: 100%;
     height: 600px;
+    display: block;
     object-fit: cover;
 }
 .appointment-hero_image::before{
@@ -181,4 +217,31 @@ img{
   
 }
 
+@media (max-width: 768){
+    .appointment-hero_container{
+        flex-direction: column-reverse;
+    }
+    .appointment-hero_content,
+    .appointment-hero_image{
+        width: 100%;
+    }
+
+    .appointment-hero_content{
+        padding: 30px 20px;
+        text-align: center;
+    }
+    .appointment-hero_title{
+        font-size: 22px;
+    }
+    .appointment-hero_subtitle,
+    .appointment-hero_eyebrow{
+        font-size: 18px;
+    }
+    .appointment-hero_image img{
+        height: auto;
+    }
+    .appointment-hero_button{
+        margin: auto;
+    }
+}
    
