@@ -1,6 +1,5 @@
 
 /* School Logo */
-
 .schools{
     padding: 60px 0 0px 0;
     overflow: hidden;
@@ -66,16 +65,6 @@
 }
 
 /* Choose School Card  */
-
-.school-section{
-    padding: 80px 0;
-}
-
-/* .swiper-wrapper{
-    display: flex;
-   justify-content: center;
-   gap: 14px;
-} */
 .school-section h2{
     text-align: center;
     font-size: 38px;
@@ -86,7 +75,6 @@
     color: transparent;
     font-weight: 600;
 }
-
 .school-card{
     position: relative;
     overflow: hidden;
@@ -101,11 +89,6 @@
     display: block;
     filter: brightness(80%); 
 }
-
-/* .swiper-wrapper{
-    display: flex;
-} */
-
 .school-info{
     position: absolute;
     left:0;
@@ -119,61 +102,70 @@
     font-size: 14px;
     padding-bottom: 10px;
 }
-
 .school-info p{
     line-height: 1.5;
     font-size: 14px;
 }
-
 .swiper-slide{
     height: auto;
     width: 100%;
 }
 .school-swiper{
     position: relative;
-    margin: 0 80px;
-}
-.schoolSwiper{
-    padding:30px 52px;
-}
-.arrow-action{
-    position: absolute;
-    background: linear-gradient( to right, #0344A2, #010E39);
-    cursor: pointer;
-    border-radius: 50%;
-    padding: 6px;
-    top:40%;
-}
-
-.icon-prev{
-   left: 25px;
-   
-}
-.icon-next{
-  right:25px;
+    overflow: hidden;
+    margin: 30px 55px;
+    padding: 0 20px;
+    padding-bottom: 40px;
 }
  .swiper-pagination{
-        margin-top:20px;
-        position: relative;
-    }
-.swiper-slide{
-    flex-shrink: unset !important;
+    margin-top:20px;
+    position: relative;
 }
 
 /* Responsivness slider */
-
 @media (min-width: 992px){
-     .arrow-action{
+    .arrow-action{
        display: none;
     }
     .schoolSwiper .swiper-wrapper{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
+        gap: 10px;
     }
     .swiper-pagination,
     .icon-prev,
     .icon-next{
         display: none;
+    }
+    .school-swiper{
+        margin: 30px 55px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .school-swiper{
+        position: relative;
+        overflow: hidden;
+        margin: 30px 20px;
+        padding: 0 15px;
+        padding-bottom: 40px;
+    }
+    .school-section h2{
+        font-size: 24px;
+        margin: 0px 28px;
+        line-height: 1.3;
+    }
+}
+@media (max-width: 767px) {
+    .school-swiper{
+        position: relative;
+        overflow: hidden;
+        margin: 30px 10px;
+        padding: 0 10px;
+        padding-bottom: 40px;
+    }
+    .school-section h2{
+        font-size: 20px;
+        margin: 0px 28px;
+        line-height: 1.3;
     }
 }

@@ -22,6 +22,9 @@ function initSwiper() {
 
     if ( window.innerWidth < 992) {
 
+        console.log(document.querySelector(".icon-next"));
+        console.log(document.querySelector(".icon-prev"));
+
         if (!schoolSwiper) {
 
         schoolSwiper = new Swiper(".schoolSwiper", {
@@ -36,11 +39,8 @@ function initSwiper() {
 
             keyboard: {
                 enabled: true,
-            },
-
-            navigation:{
-                nextE1:".icon-next",
-                prevE1:".icon-prev",
+                onlyInViewposrt: true,
+                pageUpDown: true,
             },
             a11y: {
                 enabled:true,
