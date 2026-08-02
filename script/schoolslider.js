@@ -29,6 +29,15 @@ const swriper = new initSwiper(".exhibitionSwiper",{
     }
 });
 
+/* skipLink */
+
+const skipLink = document.querySelector(".skip-link");
+
+skipLink.addEventListener("click", function () {
+    const main = document.getElementById("main-content");
+    main.focus();
+});
+
 /* Header */
 
 const header = document.getElementById("header");

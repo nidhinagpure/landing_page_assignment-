@@ -5,7 +5,7 @@
 }
 
 body{
-    font-family:Arial, Helvetica;
+    font-family: "Museo Sans", sans-serif;
 }
 
 html{
@@ -15,7 +15,15 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 button,
-input{
-    font-family: inherit;
+input,
+select,
+textarea {
+    font: inherit;
 }
