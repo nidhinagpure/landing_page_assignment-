@@ -1,21 +1,191 @@
+
+
+html{
+    scroll-behavior: smooth;
+}
+/* body{
+    font-family: "Poppins", sans-serif;
+    background: #fff;
+    color: #fff;
+} */
+
+
+
+a {
+    text-decoration: none;
+}
+
+button,
+input{
+    font-family: inherit;
+}
+
 .hero-section{
      background: linear-gradient(#000E38,#3F186A);
-     height: 590px;
+     padding: 70px 0;
+     position: relative;
      width: 100%;
 }
 .hero-section_container{
-    display: flex;
-    justify-content: space-around;
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 50px;
+    display: grid;
+    grid-template-columns: 1fr 520px 380px;
     align-items: center;
+    gap: 50px;
+}
+
+/* .hero-section-image_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* .hero-section-image_card{
+    width: 100%;
+    height: 300px;
+} */
+
+.hero-section_content h1{
+    font-size: 45px;
+    line-height: 1.15;
+    font-weight: 700;
+    color: #FFD58B;
+    margin-bottom: 20px;
+}
+.hero-section_content p{
+    font-size: 28px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #FFD58B;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+
+.hero-section_button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 520px;
+    background: #FFD58B;
+    color: #000E38;
+    padding: 3px solid #E6BE74;
+}
+
+.hero-section_button>div{
+    flex: 1;
+    text-align: center;
+}
+
+.hero-section_button>div p:first-child{
+    font-size:18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.hero-section_button>div p:last-child{
+    font-size: 15px;
 }
 
 .hero-section-image_container{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 22px;
+    height: 700px;
+    overflow: hidden;
+    position: relative;
 }
 
 .hero-section-image_card{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.hero-section-image_card img{
+    width: 170px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 90px;
+    transition: 4s;
+}
+
+.hero-section-image_card img:hover{
+    transform: scale(1.05);
+}
+
+.hero-section form{
     width: 100%;
-    height: 300px;
+    background: rgba(58, 22, 96, .75);
+    backdrop-filter: blur(14px);
+    border-radius: 24px;
+    padding: 35px;
+}
+
+.hero-section form>p{
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.hero-section form div{
+     margin-bottom: 18px;
+}
+
+.hero-section input{
+    width: 100%;
+    height: 58px;
+    padding: 0 18px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .12);
+    color: #fff;
+    font-size: 16px;
+}
+
+.hero-section input::placeholder{
+    color: rgba(255, 255, 255, .8);
+}
+
+#grade{
+    height: 90px;
+}
+
+.hero-section button{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    width: 210px;
+    height: 58px;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.hero-section button span{
+    width: 58px;
+    height: 58px;
+    background: #fff;
+    color: #36156A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 18px;
+    font-size: 22px;
+}
+.hero-section button:focus-visible,
+.hero-section input:focus-visible{
+    outline: 3px solid #FFD58B;
+}
+.hero-section-image_track{
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
