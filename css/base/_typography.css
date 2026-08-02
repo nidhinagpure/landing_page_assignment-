@@ -7,3 +7,15 @@
 body{
     font-family:Arial, Helvetica;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+
+button,
+input{
+    font-family: inherit;
+}
