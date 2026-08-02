@@ -190,7 +190,6 @@
 .hero-section-image_card{
     animation-play-state:paused;
 }
-
 @keyframes heroUp{
     0%{
         transform: translateY(180px);
@@ -202,7 +201,6 @@
         transform:  translateY(-180px);
     }
 }
-
 @keyframes heroDown{
    0%{
      transform: translateY(-180px);
@@ -214,9 +212,7 @@
     transform: translateY(180px);
    }
 }
-
 @media (min-width:320px) and (max-width:479px){
-
     .hero-section{
         height: auto;
         padding: 20px 10px;
@@ -363,7 +359,4 @@
         width:140px;
         height:290px;
     }
-}
-@media (min-width:1400px){
-
 }
