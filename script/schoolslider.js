@@ -1,5 +1,5 @@
 
-const swriper = new Swiper(".exhibitionSwiper",{
+const swriper = new initSwiper(".exhibitionSwiper",{
     slidesPerView:1,
     spaceBetween:20,
     loop:true,
@@ -17,7 +17,7 @@ const swriper = new Swiper(".exhibitionSwiper",{
     },
 
     navigation:{
-        nextE1:".custom-next",
+        nextE1:"custom-next",
         prevE1:".custom-prev"
     },
 

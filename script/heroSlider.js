@@ -46,3 +46,6 @@ function initSwiper() {
 }
 window.addEventListener("load", initSwiper);
 window.addEventListener("resize", initSwiper);
+
+
+
