@@ -1,6 +1,6 @@
 .exhibition-section{
     position: relative;
-    background: linear-gradient(180deg, #000E38 60%, #3F186A 150%);
+    background: linear-gradient(180deg, #33155c 60%, #3F186A 150%);
     padding: 80px 0 6px 0px;
     overflow: hidden;
 }
@@ -64,4 +64,20 @@
    line-height: 1.5;
    padding-top: 18px;
    color: #120B4F;
+}
+.arrow-action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+    gap: 24px;
+}
+.arrow-action img{
+    border: 2px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 6px;
+}
+.arrow-action img:hover{
+    background: #bbb7b7;
 }
