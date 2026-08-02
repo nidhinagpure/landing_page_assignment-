@@ -74,6 +74,9 @@
     background-clip: text;
     color: transparent;
     font-weight: 600;
+    font-family: "Museo Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 .school-card{
     position: relative;
@@ -101,6 +104,9 @@
 .school-info h3{
     font-size: 14px;
     padding-bottom: 10px;
+    font-family: "Museo Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 .school-info p{
     line-height: 1.5;
