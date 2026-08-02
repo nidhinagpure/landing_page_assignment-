@@ -101,13 +101,7 @@
 }
 
 
-
-
-
-
-
-
-/* Background Image css */
+/* Appointment Section Image css */
 
 img{
     display: block;
@@ -115,24 +109,19 @@ img{
 }
 .appointment-hero{
     overflow: hidden;
-            background: #E8D8FF;
-
+    background: #E8D8FF;
 }
 .appointment-hero_container{
     display: flex;
     align-items: center;
     min-height: 600px;
 }
-
 .appointment-hero_content{
     width: 50%;
-    /* padding: 80px; */
     position: relative;
     z-index: 2;
     padding-left: 70px;
-
 }
-
 .appointment-hero_eyebrow{
     font-size:26px;
     color: #7E4CE6;
@@ -146,14 +135,12 @@ img{
     color: #1B0B56;
     margin-bottom: 10px;
 }
-
 .appointment-hero_subtitle{
     font-size: 26px;
     font-style: italic;
     color: #7E4CE6;
     margin-bottom: 45px;
 }
-
 .appointment-hero_button{
     display: inline-flex;
     align-items: center;
@@ -170,7 +157,6 @@ img{
     color: #fff;
     font-size: 24px;
 }
-
 .appointment-hero_button-text{
     padding: 0 10px;
     height: 40px;
@@ -181,7 +167,6 @@ img{
     font-size: 12px;
     letter-spacing: .5px;
 }
-
 .appointment-hero_image{
     width: 70%;
     position: relative;
@@ -208,40 +193,97 @@ img{
         rgba(232,216,255,.45) 70%,
         transparent 100%
     );
-       filter:blur(35px);
-       
+       filter:blur(35px);  
 }
 .appointment-hero__button:focus-visible{
     outline:3px solid #000;
     outline-offset:4px;
-  
 }
 
-@media (max-width: 768){
+@media (min-width:320px) and (max-width:479px){
     .appointment-hero_container{
         flex-direction: column-reverse;
+        min-height: auto;
     }
-    .appointment-hero_content,
-    .appointment-hero_image{
+    .appointment-hero_content{
         width: 100%;
     }
-
     .appointment-hero_content{
         padding: 30px 20px;
         text-align: center;
     }
     .appointment-hero_title{
         font-size: 22px;
+        line-height: 1.3;
     }
     .appointment-hero_subtitle,
     .appointment-hero_eyebrow{
         font-size: 18px;
     }
     .appointment-hero_image img{
-        height: auto;
+        display: none;
+    }
+    .appointment-hero_button{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+@media (min-width:480px) and (max-width:767px){
+    .appointment-hero_container{
+        flex-direction: column-reverse;
+        min-height: auto;
+    }
+    .appointment-hero_content,
+    .appointment-hero_image{
+        width: 100%;
+    }
+    .appointment-hero_content{
+        padding: 30px 20px;
+        text-align: center;
+        padding-left: 40px;
+    }
+    .appointment-hero_title{
+        font-size: 30px;
+    }
+    .appointment-hero_eyebrow,
+    .appointment-hero_subtitle{
+        font-size: 16px;
     }
     .appointment-hero_button{
         margin: auto;
     }
+    .appointment-hero_image img{
+        height: 400px;
+    }
+    .appointment-hero_image::before{
+        display: none;
+    }
 }
-   
+@media (min-width:768px) and (max-width:1023px){
+
+    .appointment-hero_container{
+        min-height:500px;
+    }
+
+    .appointment-hero_content{
+        padding-left:30px;
+    }
+
+    .appointment-hero_title{
+        font-size:42px;
+    }
+
+    .appointment-hero_eyebrow,
+    .appointment-hero_subtitle{
+        font-size:22px;
+    }
+
+    .appointment-hero_image img{
+        height:500px;
+    }
+
+    .appointment-hero_image::before{
+        width:250px;
+        left:-90px;
+    }
+}

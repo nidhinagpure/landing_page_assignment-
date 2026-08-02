@@ -256,33 +256,46 @@
 </section>
 
 <!--- Exhibition Section -->
-<section class="exhibition-section">
-  <h2>What Makes This Exhibition a Must-Visit</h2>
-  <div class="exhibition-section_container">
+<section class="exhibition-section" aria-labelledby="exhibition-heading">
+  <h2 id="exhibition-heading">What Makes This Exhibition a Must-Visit</h2>
+  <div class="swiper exhibitionSwiper">
+   
+    <div class="swiper-wrapper">
 
-      <diV class="exhibition-section_card">
+    <div class="swiper-slide">
+      <div class="exhibition-section_card">
           <img src="./assets/icons/icon1.png" class="exhibition-section_card_img"/>
           <h4>Interact Directly with School <br>Heads </h4>
           <p>Get answers straight from the <br> experts</p>
-      </diV>
+      </div>
 
-      <diV class="exhibition-section_card">
+    </div>  
+
+    <div class="swiper-slide">
+      <div class="exhibition-section_card">
           <img src="./assets/icons/icon1.png" class="exhibition-section_card_img"/>
           <h4>Compare Curriculum & <br> Pedagogy </h4>
           <p>Understand the differences between CBSE, ICSE, IB, Cambridge, Finnish & more</p>
-      </diV>
+      </div>
+    </div>
 
-    <diV class="exhibition-section_card">
+    <div class="swiper-slide">
+    <div class="exhibition-section_card">
         <img src="./assets/icons/icon1.png" class="exhibition-section_card_img"/>
         <h4>Get Exclusive Fee Structures & <br> Offers</h4>
         <p>Access transparent information <br> and avail offers</p>
-    </diV>
+    </div>
+</div>
 
+<div class="swiper-slide">
     <div class="exhibition-section_card">
         <img src="./assets/icons/icon1.png" class="exhibition-section_card_img"/>
         <h4>Explore Schools Offerings</h4>
         <p>Preview infrastructure, co- <br>curricular, teaching methodology and culture</p>
     </div>
+</div>
+   
+<div class="swiper-slide">
 
     <div class="exhibition-section_card">
         <img src="./assets/icons/icon1.png" class="exhibition-section_card_img"/>
@@ -290,11 +303,14 @@
         <p>Preview infrastructure, co-curricular, teaching <br> methodology and culture</p>
     </div>
   </div>
+  </div>
+  </div>
 </section>
+
  <div class="exhibition-section_round">
    <div class="arrow-action">
-    <img src="./assets/icons/left_arow.png"/>
-     <img src="./assets/icons/right_arrow.png"/>
+    <img src="./assets/icons/left_arow.png" aria-label="Previous Slide"/>
+    <img src="./assets/icons/right_arrow.png" aria-label="Next Slide"/>
    </div>
  </div>
 
@@ -378,7 +394,9 @@
         <p>Copyright © 2025 | All rights reserved.  Premier Schools Exhibition</p>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script/heroSlider.js"></script>
+    <script src="./script/schoolslider.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </body>
 </html>
