@@ -1,3 +1,130 @@
+
+  /* Header */
+ .header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: #fff;
+    transition: .35s ease;
+    box-shadow: none;
+ }
+
+.header .header-container{
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    transition: .35s ease;
+}
+.logo img{
+    width: 160px;
+    margin-top: 50px;
+    display: block;
+}
+.nav a{
+    color: #2d256c;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+.register-btn {
+    text-decoration: none;
+    background: #fff;
+    color: #000E38;
+    border: 2px solid #000E38;
+    border-radius: 6px;
+    font-size:12px;
+    font-weight: 700;
+    align-items: center;
+    gap: 16px;
+    padding: 0 20px 0 0;
+    transition: .35s ease;
+    display: inline-flex;
+}
+.register-btn span{
+    width: 46px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #23145E;
+    color: #fff;
+    font-size: 24px;
+}
+.register-btn .right-arrow{
+    display: none;
+}
+.header.scrolled{
+    box-shadow: 0 5px 20px rgba(0,0,0,.12);
+}
+.header.scrolled .container{
+    height: 72px;
+}
+.header.scrolled .logo img{
+    width: 105px;
+}
+.header.scrolled .nav a{
+    font-size:17px;
+}
+.header.scrolled .register-btn{
+    background: #fff;
+    color: #435a9e;
+    font-size:16px;
+    gap: 6px;
+    padding: 8px 17px 8px 17px;
+    transition: .35s ease;
+}
+.header.scrolled .register-btn .right-arrow{
+    display: inline-flex;
+    color: #281966;
+    background: transparent;
+    width: 36px;
+    height: 30px;
+    font-size: 30px;
+    font-weight: 400;
+    align-items: center;
+}
+.header.scrolled .register-btn span{
+    display: none;
+}
+.header.scrolled .logo img{
+    margin-top: 0;
+    padding: 4px;
+}
+.header.scrolled{
+    background: linear-gradient(#000E38,#3F186A 15%);
+}
+main{
+    padding-top: 130px;
+}
+
+@media (min-width: 320px) and (max-width: 479px){
+  .register-btn{
+    font-size: 10px;
+     gap: 2px;
+    padding: 0 10px 0 0px;
+  }
+  .register-btn span{
+    width: 32px;
+    height: 30px;
+  }
+  .header.scrolled .register-btn{
+    font-size:10px;
+  }
+  .header.scrolled .register-btn .right-arrow{
+ width: 25px;
+    height: 25px;
+    font-size: 26px;
+  }
+}
+
+/* Footer */
+
 .footer{
     background: linear-gradient(#3F186A,#000E38);
     color: #fff;

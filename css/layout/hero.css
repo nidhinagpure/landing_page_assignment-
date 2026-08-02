@@ -323,7 +323,7 @@
         margin: auto;
     }
 }
-@media (min-width:1024px) and (max-width:1190px){
+@media (min-width:1024px) and (max-width:1199px){
     .hero-section{
         height: auto;
     }
@@ -344,19 +344,30 @@
         margin-top: -90px;
     }
 }
-@media (min-width:1200) and (max-width:1399px){
+@media (min-width:1200px) and (max-width:1400px){
     .hero-section_container{
         grid-template-columns:1fr 430px 320px;
         gap:20px;
+        padding: 10px;
     }
     .hero-section_content h1{
-        font-size:36px;
+        font-size:30px;
     }
     .hero-section_content h2{
-        font-size:46px;
+        font-size:40px;
     }
     .hero-section-image_card img{
-        width:140px;
-        height:290px;
+        width:130px;
+        height:250px;
     }
+    .hero-section_button {
+        padding: 14px;
+    }
+    .hero-section_button h3{
+       font-size: 12px;
+    }
+    .hero-section_button p{
+       font-size: 12px;
+    }
+
 }
