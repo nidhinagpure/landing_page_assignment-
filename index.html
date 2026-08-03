@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/css/layout/stats.css">
     <link rel="stylesheet" href="/css/layout/hero.css">
     <link rel="stylesheet" href="/css/layout/participating-schools.css">
-    <link rel="stylesheet" href="/css/layout/exhibition.css"/>
+    <link rel="stylesheet" href="/css/layout/exhibition.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
@@ -24,7 +24,7 @@
     <header class="header" id="header">
       <div class="header-container">  
         <a href="#" class="logo">
-          <img src="./assets/logos/main_logo.png" alt="Premier Schools Exhibition logo"/> </a>
+          <img src="./assets/logos/main_logo.png" alt="Premier Schools Exhibition logo"> </a>
         <a href="#" class="register-btn"> <span> ↗ </span> Register Now <span class="right-arrow">  → </span></a>
       </div>
     </header>
@@ -49,19 +49,19 @@
 <!-- Animation of image hero section --> 
       <div class="hero-section-image_container">
         <div class="hero-section-image_card">
-          <img src="./assets/hero/slider1.png"/>
-          <img src="./assets/hero/slider3.jpg"/>
-          <img src="./assets/hero/slider2.png"/>
+          <img src="./assets/hero/slider1.jpg" alt="Students at Premier Schools Exhibition">
+          <img src="./assets/hero/slider3.png" alt="Students at Premier Schools Exhibition">
+          <img src="./assets/hero/slider2.jpg" alt="Students at Premier Schools Exhibition">
         </div>
         <div class="hero-section-image_card">
-          <img src="./assets/hero/slider9.png"/>
-          <img src="./assets/hero/slider13.png"/>
-          <img src="./assets/hero/slider11.jpg"/>
+          <img src="./assets/hero/slider9.jpg" alt="Students at Premier Schools Exhibition">
+          <img src="./assets/hero/slider9.png" alt="Students at Premier Schools Exhibition">
+          <img src="./assets/hero/slider4.png" alt="Students at Premier Schools Exhibition">
         </div>
         <div class="hero-section-image_card">
-          <img src="./assets/hero/slider5.png"/>
-          <img src="./assets/hero/slider6.jpg"/>
-          <img src="./assets/hero/slider12.png"/>
+          <img src="./assets/hero/slider7.png" alt="Students at Premier Schools Exhibition">
+          <img src="./assets/hero/slider11.jpg" alt="Students at Premier Schools Exhibition">
+          <img src="./assets/hero/slider12.png" alt="Students at Premier Schools Exhibition">
         </div>
       </div>
 <!---Form Layout -->
@@ -75,25 +75,25 @@
            placeholder="Parent's Name"
            autocomplete="name"
            required
-          />
+          >
         </div>
         <div>
            <input type="tel"
            id="number" 
            name="number"
            placeholder="Phone number"
-           autocomplete="name"
+           autocomplete="tel"
            required
-          />
+          >
         </div>
          <div>
-           <input type="tel"
+           <input type="text"
+           class="grade-input"
            id="grade" 
            name="grade"
            placeholder="Which grade are you looking for?"
-           autocomplete="name"
-           required
-          />
+           autocomplete="off"
+          >
         </div>
 
         <button type="submit" aria-label="submit Form">
@@ -158,18 +158,18 @@
       <!-- Left animations -->  
       <div class="logo-slider">
         <div class="logo-track">
-            <div class="logo-card"><img src="assets/schools/school_logo1.png"></div>
-            <div class="logo-card"><img src="assets/schools/school_logo2.png"></div>
-            <div class="logo-card"><img src="assets/schools/school_logo3.png"></div>
-            <div class="logo-card"><img src="assets/schools/school_logo4.png"></div>
-            <div class="logo-card"><img src="assets/schools/school_logo5.png"></div>
-            <div class="logo-card"><img src="assets/schools/school_logo6.png"></div>
-            <div class="logo-card"><img src="assets/schools/school_logo7.png"></div>
-            <div class="logo-card"><img src="assets/schools/school_logo8.jpg"></div>
-            <div class="logo-card"><img src="assets/schools/school_logo9.jpg"></div>
-            <div class="logo-card"><img src="assets/schools/school_logo9.jpg"></div>
-            <div class="logo-card"><img src="assets/schools/school_logo9.jpg"></div>
-            <div class="logo-card"><img src="assets/schools/school_logo9.jpg"></div>
+            <div class="logo-card"><img src="assets/schools/school_logo1.png" alt="School logo"></div>
+            <div class="logo-card"><img src="assets/schools/school_logo2.png" alt="School logo"></div>
+            <div class="logo-card"><img src="assets/schools/school_logo3.png" alt="School logo"></div>
+            <div class="logo-card"><img src="assets/schools/school_logo4.png" alt="School logo"></div>
+            <div class="logo-card"><img src="assets/schools/school_logo5.png" alt="School logo"></div>
+            <div class="logo-card"><img src="assets/schools/school_logo6.png" alt="School logo"></div>
+            <div class="logo-card"><img src="assets/schools/school_logo7.png" alt="School logo"></div>
+            <div class="logo-card"><img src="assets/schools/school_logo8.jpg" alt="School logo"></div>
+            <div class="logo-card"><img src="assets/schools/school_logo9.jpg" alt="School logo"></div>
+            <div class="logo-card"><img src="assets/schools/school_logo9.jpg" alt="School logo"></div>
+            <div class="logo-card"><img src="assets/schools/school_logo9.jpg" alt="School logo"></div>
+            <div class="logo-card"><img src="assets/schools/school_logo9.jpg" alt="School logo"></div>
         </div>
       </div>
 
@@ -200,7 +200,7 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide"> 
                 <div class="school-card">
-                <img src="/assets/students/student1.png" id="slide" alt="student-image"/>
+                <img src="/assets/students/student1.png" id="slide" alt="Student image">
                 <div class="school-info">
                   <h3>Pre-Schools & Early Learning Centres </h3>
                   <p>Nurturing foundational skills for toddlers and pre-primary children.</p>
@@ -210,7 +210,7 @@
 
           <div class="swiper-slide"> 
              <div class="school-card">
-              <img src="/assets/students/student2.png"alt="student-image"/>
+              <img src="/assets/students/student2.png"alt="student-image">
               <div class="school-info">
                 <h3>K–12 CBSE Day Schools </h3>
                 <p>Reputed schools offering complete schooling from Kindergarten to Grade 12.</p>
@@ -220,7 +220,7 @@
 
           <div class="swiper-slide"> 
              <div class="school-card">
-              <img src="/assets/students/student3.png"alt="student-image"/>
+              <img src="/assets/students/student3.png"alt="student-image">
               <div class="school-info">
                 <h3>Heritage to New-Age Schools</h3>
                 <p>Time-tested schools to innovative pedagogy, tech enabled, future-ready schools</p>
@@ -230,7 +230,7 @@
 
           <div class="swiper-slide"> 
              <div class="school-card">
-              <img src="/assets/students/student4.png"alt="student-image"/>
+              <img src="/assets/students/student4.png"alt="student-image">
               <div class="school-info">
                 <h3>International Curriculum Schools</h3>
                 <p>Offering IB, Cambridge, Finnish and other global curricula with a global learning environment.</p>
@@ -259,7 +259,7 @@
       </div>
     
     <div class="appointment-hero_image">
-      <img  src="/assets/students/member_img.png" alt="Parents interacting with school representatives during an education exhibition"/>
+      <img  src="/assets/students/member_img.png" alt="Parents interacting with school representatives during an education exhibition">
     </div>
 </div>
 </section>
@@ -273,7 +273,7 @@
 
     <div class="swiper-slide">
       <div class="exhibition-section_card">
-          <img src="./assets/icons/icon1.png" class="exhibition-section_card_img"/>
+          <img src="./assets/icons/icon1.png" class="exhibition-section_card_img" alt="study icon">
           <h4>Interact Directly with School <br>Heads </h4>
           <p>Get answers straight from the <br> experts</p>
       </div>
@@ -282,7 +282,7 @@
 
     <div class="swiper-slide">
       <div class="exhibition-section_card">
-          <img src="./assets/icons/icon1.png" class="exhibition-section_card_img"/>
+          <img src="./assets/icons/icon1.png" class="exhibition-section_card_img" alt="study icon">
           <h4>Compare Curriculum & <br> Pedagogy </h4>
           <p>Understand the differences between CBSE, ICSE, IB, Cambridge, Finnish & more</p>
       </div>
@@ -290,7 +290,7 @@
 
     <div class="swiper-slide">
     <div class="exhibition-section_card">
-        <img src="./assets/icons/icon1.png" class="exhibition-section_card_img"/>
+        <img src="./assets/icons/icon1.png" class="exhibition-section_card_img" alt="study icon">
         <h4>Get Exclusive Fee Structures & <br> Offers</h4>
         <p>Access transparent information <br> and avail offers</p>
     </div>
@@ -298,14 +298,14 @@
 
 <div class="swiper-slide">
     <div class="exhibition-section_card">
-        <img src="./assets/icons/icon1.png" class="exhibition-section_card_img"/>
+        <img src="./assets/icons/icon1.png" class="exhibition-section_card_img" alt="study icon">
         <h4>Explore Schools Offerings</h4>
         <p>Preview infrastructure, co- <br>curricular, teaching methodology and culture</p>
     </div>
 </div>
 <div class="swiper-slide">
     <div class="exhibition-section_card">
-        <img src="./assets/icons/icon1.png" class="exhibition-section_card_img"/>
+        <img src="./assets/icons/icon1.png" class="exhibition-section_card_img" alt="study icon">
         <h4>Explore Schools Offerings</h4>
         <p>Preview infrastructure, co-curricular, teaching <br> methodology and culture</p>
     </div>
@@ -315,11 +315,19 @@
 </section>
 
  <div class="exhibition-section_round">
-   <div class="arrow-action">
-    <img src="./assets/icons/left_arow.png" aria-label="Previous Slide"/>
+
+    <div class="arrow-action">
+
+        <button class="custom-prev" aria-label="Previous">
+             <img src="./assets/icons/left_arow.png" aria-label="Previous Slide"/> </button>
+
+        <button class="custom-next" aria-label="Next">
     <img src="./assets/icons/right_arrow.png" aria-label="Next Slide"/>
-   </div>
- </div>
+        </button>
+
+    </div>
+
+</div>
 
     <!-- Footer Section -->
     <footer class="footer">
@@ -328,14 +336,14 @@
 
         <!-- Footer Logo -->
         <div class="logo-container">
-            <img src="/assets/logos/main_logo.png" class="footer-logo" alt="Logo"/>
+            <img src="/assets/logos/main_logo.png" class="footer-logo" alt="Logo">
         </div> 
         
         <!-- Footer Content -->
 
         <div class="footer-item">
           <div class="">
-            <img src="/assets/icons/location.png" class="footer-icon" alt="Location Icon"/>
+            <img src="/assets/icons/location.png" class="footer-icon" alt="Location Icon">
           </div>
 
           <div class="footer-content">
@@ -351,7 +359,7 @@
          <!-- Footer Content -->
         <div class="footer-item">
           <div>
-            <img src="/assets/icons/location.png" class="footer-icon" alt="Location Icon"/>
+            <img src="/assets/icons/location.png" class="footer-icon" alt="Location Icon">
           </div>
 
           <div class="footer-content">
@@ -367,7 +375,7 @@
          <!-- Footer Content -->
         <div class="footer-item">
           <div>
-            <img src="/assets/icons/calling.png" class="footer-icon" alt="Location Icon"/>
+            <img src="/assets/icons/calling.png" class="footer-icon" alt="Location Icon">
           </div>
 
           <div class="footer-content">
@@ -383,15 +391,15 @@
 
           <div class="social-icon">
             <a href="https://www.facebook.com/PremierSchoolsExhibition" target="_blank">
-                <img src="/assets/icons/facebook.png" class="footer-icon" alt="Facebook Icon"/>
+                <img src="/assets/icons/facebook.png" class="footer-icon" alt="Facebook Icon">
             </a>
 
             <a href="https://www.instagram.com/premierschoolsexhibition/" target="_blank">
-                <img src="/assets/icons/instagram.png" class="footer-icon" alt="Instagram Icon"/>
+                <img src="/assets/icons/instagram.png" class="footer-icon" alt="Instagram Icon">
             </a>
 
-            <a href="https://www.linkedin.com/company/premier-schools-exhibition/" target="_blank">
-                <img src="/assets/icons/youtube.png" class="footer-icon" alt="LinkedIn Icon"/>
+            <a href="https://www.youtube.com/company/premier-schools-exhibition/" target="_blank">
+                <img src="/assets/icons/youtube.png" class="footer-icon" alt="Youtube Icon">
             </a>
           </div>
         </div>
