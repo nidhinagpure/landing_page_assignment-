@@ -1,5 +1,5 @@
 
-/* Skip */
+/* Skip to content tab */
 
 .skip-link {
     position: absolute;
@@ -15,14 +15,13 @@
     z-index: 9999;
     transition: top 0.3s ease;
 }
-
 .skip-link:focus{
     top:20px;
     outline: 3px solid #FFD700;
     outline-offset:3px
 }
 
-  /* Header */
+/* Header */
  .header{
     position: fixed;
     top:0;
@@ -147,7 +146,6 @@ main{
 }
 
 /* Footer */
-
 .footer{
     background: linear-gradient(#3F186A,#000E38);
     color: #fff;

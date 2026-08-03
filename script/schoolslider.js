@@ -1,34 +1,4 @@
 
-// const swriper = new initSwiper(".exhibitionSwiper",{
-//     slidesPerView:1,
-//     spaceBetween:20,
-//     loop:true,
-
-//     keyboard:{
-//         enabled:true,
-//     },
-//     a11y:{
-//         enabled:true,
-//     },
-
-//     autoplay:{
-//         delay:3000,
-//         disableOnInteraction:false,
-//     },
-
-//     navigation:{
-//         nextE1:"custom-next",
-//         prevE1:".custom-prev"
-//     },
-
-//     breakpoints:{
-//         480:{slidesPerView:1},
-//         768:{slidesPerView:2},
-//         1024:{slidesPerView:3},
-//         1400:{slidesPerView:4}
-//     }
-// });
-
 /* skipLink */
 
 const skipLink = document.querySelector(".skip-link");
@@ -48,32 +18,7 @@ window.addEventListener("scroll", () => {
     }
 });
 
-/* */
-
-// Exhibition Slider
-// const exhibitionSwiper = new Swiper(".exhibitionSwiper", {
-//     slidesPerView: 4,
-//     spaceBetween: 20,
-//     loop: true,
-
-//     navigation: {
-//         nextEl: ".custom-next",
-//         prevEl: ".custom-prev",
-//     },
-
-//     breakpoints: {
-//         0: {
-//             slidesPerView: 1,
-//         },
-//         768: {
-//             slidesPerView: 2,
-//         },
-//         1024: {
-//             slidesPerView: 4,
-//         },
-//     },
-// });
-
+/* Exhibition Header */
 
 document.addEventListener("DOMContentLoaded", () => {
   new Swiper(".exhibitionSwiper", {
@@ -85,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     grabCursor: true,
 
     autoplay: {
-      delay: 3000,
+      delay: 1000,
       disableOnInteraction: false,
       pauseOnMouseEnter: true
     },
